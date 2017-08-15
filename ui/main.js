@@ -6,6 +6,6 @@ element.innerHTML = 'new value being set';
 //move the image 
 var imge = document.getElementById('pic');
 imge.onClick = function(){
-    alert('executed');
+    console.log('executed');
     imge.style.marginLeft = '100px';
 } ;
