@@ -11,7 +11,7 @@ imge.onclick = function(){
 //counter code
 var button = document.getElementById('counter');
 button.onclick = function(){
-   //make a request to counter endpoint
+   //create a request to counter endpoint
    var request = new XMLHttpRequest();
    
    //capture that response and store
@@ -29,6 +29,12 @@ button.onclick = function(){
    
    //render the variable
    //counter++;//nothing to do with counter end point
+   
+   //make the request
+   request.open('GET' , 'http://aditidwivedi95.imad.hasura-app.io/counter' , true);
+   request.send(null);
+   
+   
    
     
 };
