@@ -6,5 +6,5 @@ element.innerHTML = 'new value being set';
 //move the image 
 var img = document.getElementById('dragon');
 img.onClick = function(){
-    img.style.marginLeft = "100px";
+    img.style.marginLeft = "200px";
 } ;
