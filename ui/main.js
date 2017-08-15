@@ -6,5 +6,5 @@ console.log('Loaded!');
 //move the image 
 var imge = document.getElementById('pic');
 imge.onClick = function(){
-    imge.style.marginLeft = '100px';
+    pic.style.marginLeft = '100px';
 } ;
