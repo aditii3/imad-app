@@ -7,4 +7,4 @@ element.innerHTML = 'new value being set';
 var img = document.getElementById('dragon');
 img.onClick = function(){
     img.style.marginLeft = '100px';
-} 
+} ;
