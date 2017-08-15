@@ -13,12 +13,23 @@ var button = document.getElementById('counter');
 var counter = 0;
 button.onclick = function(){
    //make a request to counter endpoint
+   var request = new XMLHttpRequest();
    
    //capture that response and store
+   request.onreadystatechange = function(){
+       if(request.readyState == XMLHttpRequest.DONE){
+           if(request.stsatus == 200){
+               var counter = request.responseText;
+               var span = document.getElementById('count');
+   span.innerHTML = counter.toString();
+           }
+       }
+       
+       
+   };
    
    //render the variable
-   counter++;//nothing to do with counter end point
-   var span = document.getElementById('count');
-   span.innerHTML = counter.toString();
+   //counter++;//nothing to do with counter end point
+   
     
 };
